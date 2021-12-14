@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+    background-color: lightcyan;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+section{
+    background-color: white;
+    border-radius: 20px;
+}
+main {
+  width: 900px;
+  max-width: 90%;
+  margin: 0 auto;
+
+}
+.title{
+   padding: 1px;
+}
+.top-players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+}
+
+.player img {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+h1 {
+  color: tomato;
+  margin: 30px;
+
+}
+@media (max-width: 992px) {
+  .top-players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 688px) {
+  .top-players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* blog section  */
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+.blog {
+  display: flex;
+  align-items: center;
+}
+.thumbnail img {
+  width: 150px;
+  margin-right: 50px;
+}
+@media (max-width: 992px) {
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 688px) {
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog {
+    display: block;
+  }
+}
+
+/* course section  */
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  margin: 20px;
+}
+.course-thumbnail img {
+  width: 200px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.course-p {
+  color: tomato;
+}
+
+.filled {
+  font-size: 0.8em;
+  color: gold;
+}
+.unfilled {
+  font-size: 0.8em;
+  color: gainsboro;
+}
+
+.course-info {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  display: flex;
+}
+
+.course-rating {
+  margin-right: 10px;
+}
+
+.course-duration{
+    background-color: rgba(235, 188, 59, 0.589);
+    border-radius: 5px;
+    padding: 3px;
+    
+}
+.far,span{
+    color: tomato;
+}
+
+
+
+
+
+
+@media (max-width: 992px) {
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 688px) {
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
